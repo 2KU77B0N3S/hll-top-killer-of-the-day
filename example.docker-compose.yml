@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  hll-top-killer:
+    build:
+      context: .  # Build from the current directory where Dockerfile is located
+    image: hll-top-killer:latest
+    container_name: hll-top-killer    
+    env_file:
+      - .env  # Load environment variables from .env file (use the example.env you generated)
+    restart: unless-stopped  # Restart policy to keep the bot running
