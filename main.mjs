@@ -141,9 +141,9 @@ function truncatePlayerNameRole(name, role, server, maxLength) {
 async function sendToDiscord(topPlayers) {
     const embed = new EmbedBuilder()
         .setColor('#0099ff')
-        .setTitle('Top 20 Spieler mit den meisten Kills des Tages in einer Runde von allen OINK Servern')
+        .setTitle('Top 20 Players with the Most Kills of the Day in a Round        ')
         .setThumbnail('https://i.imgur.com/wnQNz7A.png')
-        .setFooter({ text: 'Realtime | Letzte Aktualisierung', iconURL: 'https://i.imgur.com/9Iaiwje.png' })
+        .setFooter({ text: 'Realtime | Last Update', iconURL: 'https://i.imgur.com/9Iaiwje.png' })
         .setTimestamp();
 
     if (topPlayers.length > 0) {
